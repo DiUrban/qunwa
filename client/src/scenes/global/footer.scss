@@ -1,0 +1,56 @@
+.footerWrapper {
+  margin-top: 70px;
+  padding: 40px 0;
+  .footerBox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: clamp(20px, 30px, 40px);
+    .footerLogo {
+      width: clamp(15%, 20%, 30%);
+      .logo {
+        width: max(120px, 50%);
+        height: auto;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .aboutUsBox {
+      width: clamp(25%, 35%, 45%);
+      .aboutUs {
+        font-weight: bold;
+        margin-bottom: 30px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .footerText {
+        margin-bottom: 30px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .contactUsBox {
+      width: clamp(25%, 35%, 45%);
+
+      .contactUs {
+        font-weight: bold;
+        margin-bottom: 30px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .footerText {
+        margin-bottom: 30px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

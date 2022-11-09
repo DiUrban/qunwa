@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Ramadan & Eid",
+        "Activity Books",
+        "Board Books",
+        "Curriculum",
+        "Educational Resources/Games",
+        "Islamic Books",
+        "Stories",
+        "Science Books",
+        "Bilingual",
+        "English",
+        "Decorations & Signs"
+      ]
+    },
+    "categoryAge": {
+      "type": "enumeration",
+      "enum": [
+        "Age 0-2",
+        "Age 3-6",
+        "Age 7+"
+      ]
+    },
+    "shortDesc": {
+      "type": "richtext"
+    },
+    "descImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "topRated": {
+      "type": "boolean"
+    },
+    "newArrival": {
+      "type": "boolean"
+    },
+    "bestSeller": {
+      "type": "boolean"
+    },
+    "arabicDesc": {
+      "type": "richtext"
+    },
+    "englishDesc": {
+      "type": "richtext"
+    }
+  }
+}

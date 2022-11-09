@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_letter_subscribers",
+  "info": {
+    "singularName": "news-letter-subscriber",
+    "pluralName": "news-letter-subscribers",
+    "displayName": "newsLetterSubscriber"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    }
+  }
+}

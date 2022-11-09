@@ -1,0 +1,30 @@
+.subscribeWrapper {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+  .icon {
+    font-size: large;
+  }
+  .subscribeBox {
+    padding: 2px 4px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    background-color: #f2f2f2;
+    .inputBox {
+      margin-left: 1;
+      flex: 1;
+    }
+    .divider {
+      height: 28px;
+      margin: 0.5px;
+    }
+    .subscribeText {
+      padding: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

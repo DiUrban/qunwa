@@ -1,0 +1,18 @@
+.checkoutWrapper {
+  width: 80%;
+  margin: 100px auto;
+  .checkoutStepper {
+    margin: 20px 0;
+  }
+  .buttonBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    .backButton {
+      box-shadow: none;
+      color: white;
+      border-radius: 0;
+      padding: 15px 40px;
+    }
+  }
+}

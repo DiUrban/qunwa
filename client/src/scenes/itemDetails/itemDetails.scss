@@ -1,0 +1,112 @@
+.itemDetailsWrapper {
+  width: 80%;
+  margin: 80px auto;
+  .informationTabBox {
+    margin: 40px 0;
+  }
+  .informationBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .relatedItemsBox {
+    margin-top: 50px;
+    width: 100%;
+    .relatedItems {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1.33%;
+      justify-content: space-between;
+    }
+  }
+  .itemBox {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    .itemImageBox {
+      flex: 1 1 40%;
+      margin-bottom: 40px;
+      .carousel {
+        .control-dots {
+          align-items: center;
+          color: red;
+        }
+        .prevButton {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          padding: 5px;
+          z-index: 10;
+          color: black;
+          .icon {
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+          }
+        }
+        .nextButton {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          padding: 5px;
+          z-index: 10;
+          color: black;
+          .icon {
+            font-size: 60px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+          }
+        }
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: scale-down;
+          background-attachment: fixed;
+        }
+      }
+    }
+    .actionsBox {
+      flex: 1 1 50%;
+      margin-bottom: 40px;
+      .innerBox {
+        display: flex;
+        justify-content: space-between;
+      }
+      .wishList {
+        margin: 20px 0 5px 0;
+        display: flex;
+        .wishListText {
+          margin-left: 5px;
+        }
+      }
+    }
+    .descBox {
+      margin: 65px 0 25px 0;
+      .descText {
+        margin-top: 20px;
+      }
+    }
+    .countOuterbox {
+      display: flex;
+      align-items: center;
+      min-height: 50px;
+      .countInnerBox {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        padding: 2px 5px;
+        .count {
+          padding: 0px 5px;
+        }
+      }
+      .addToCartButton {
+        background-color: #222222;
+        color: white;
+        border-radius: 0;
+        min-width: 150px;
+        padding: 10px 40px;
+      }
+    }
+  }
+}

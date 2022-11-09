@@ -1,0 +1,20 @@
+.addressFormWrapper {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  .oneSpanTextField {
+    grid-column: span 1;
+    @media (max-width: 600px) {
+      grid-column: span 4;
+    }
+  }
+  .twoSpanTextField {
+    grid-column: span 2;
+    @media (max-width: 600px) {
+      grid-column: span 4;
+    }
+  }
+  .fourSpanTextField {
+    grid-column: span 4;
+  }
+}

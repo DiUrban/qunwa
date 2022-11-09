@@ -1,0 +1,38 @@
+.navbarWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  .navBox {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    .logoBox {
+      cursor: pointer;
+      .logo {
+        height: 70px;
+        width: auto;
+      }
+    }
+    .iconsBox {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      z-index: 2;
+      .iconButton {
+        color: black;
+        .icons {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}

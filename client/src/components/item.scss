@@ -1,0 +1,32 @@
+.itemWrapper {
+  .itemButtons {
+    position: relative;
+    .image {
+      width: 300px;
+      height: 400px;
+      cursor: pointer;
+    }
+    .buttonsOuterBox {
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      padding: 0 5%;
+      .buttonInnerBox {
+        display: flex;
+        justify-content: space-between;
+        .amountButtons {
+          display: flex;
+          align-items: center;
+          border-radius: 3px;
+        }
+        .addButton {
+          color: white;
+        }
+      }
+    }
+  }
+  .item {
+    margin-top: 3px;
+  }
+}

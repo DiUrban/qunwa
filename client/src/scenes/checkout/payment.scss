@@ -1,0 +1,17 @@
+.paymentWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 30px 0;
+  .contactInfoText {
+    margin-bottom: 15px;
+    font-size: 18px;
+    grid-column: span 4;
+  }
+  .emailField {
+    grid-column: span 4;
+    margin-bottom: 15px;
+  }
+  .phoneNumberField {
+    grid-column: span 4;
+  }
+}
