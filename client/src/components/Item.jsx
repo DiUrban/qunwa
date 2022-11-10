@@ -36,7 +36,7 @@ const Item = ({ item, width }) => {
         <img
           alt={item.name}
           className="image"
-          src={`http://localhost:1337${url}`}
+          src={`https://localhost:1337${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
         />
         <Box className="buttonsOuterBox" display={isHovered ? "block" : "none"}>

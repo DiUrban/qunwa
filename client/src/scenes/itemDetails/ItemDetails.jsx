@@ -37,7 +37,7 @@ function ItemDetails() {
 
   async function getItem() {
     const item = await fetch(
-      `http://localhost:1337/api/items/${itemId}?populate=descImages`,
+      `https://localhost:1337/api/items/${itemId}?populate=descImages`,
       { method: "GET" }
     );
     const itemJson = await item.json();
@@ -46,7 +46,7 @@ function ItemDetails() {
 
   async function getItems() {
     const items = await fetch(
-      `http://localhost:1337/api/items/?populate=image`,
+      `https://localhost:1337/api/items/?populate=image`,
       {
         method: "GET",
       }
@@ -90,7 +90,7 @@ function ItemDetails() {
                 (texture, index) => (
                   <Box key={`carousel-image-${index}`}>
                     <img
-                      src={`http://localhost:1337${texture.attributes.formats.medium.url}`}
+                      src={`https://localhost:1337${texture.attributes.formats.medium.url}`}
                       alt={`carousel-${index}`}
                       className="image"
                     />

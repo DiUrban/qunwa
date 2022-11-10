@@ -34,21 +34,19 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         payment_method_types: ["card"],
         customer_email: email,
         mode: "payment",
-        success_url: "http://localhost:3000/checkout/success",
-        cancel_url: "http://localhost:3000/checkout",
+        success_url: "https://localhost:3000/checkout/success",
+        cancel_url: "https://localhost:3000/checkout",
         line_items: lineItems,
       });
       //create the item
-      await strapi
-        .service("api::order.order")
-        .create({
-          data: {
-            userName,
-            products,
-            shippingAddress,
-            stripeSessionId: session.id,
-          },
-        });
+      await strapi.service("api::order.order").create({
+        data: {
+          userName,
+          products,
+          shippingAddress,
+          stripeSessionId: session.id,
+        },
+      });
       return { id: session.id };
     } catch (error) {
       console.log(error);

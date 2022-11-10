@@ -47,7 +47,7 @@ const CartMenu = () => {
                     <img
                       alt={item?.name}
                       className="cartItemImage"
-                      src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.url}`}
+                      src={`https://localhost:1337${item?.attributes?.image?.data?.attributes?.url}`}
                     />
                   </Box>
                   <Box flex="1 1 60%">
