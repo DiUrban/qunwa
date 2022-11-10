@@ -14,7 +14,7 @@ const ShoppingList = () => {
   };
   async function getItems() {
     const items = await fetch(
-      "https://localhost:1337/api/items?populate=image",
+      `${process.env.REACT_APP_SERVER_HOST}/api/items?populate=image`,
       { method: "GET" }
     );
     const itemsJson = await items.json();

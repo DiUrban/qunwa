@@ -6,8 +6,8 @@ import usePost from "../../hooks/usePost";
 
 const Subscribe = () => {
   const { signup, handleChange, handleSignup } = usePost(
-    "https://localhost:1337/api/email",
-    "https://localhost:1337/api/news-letter-subscribers"
+    `${process.env.REACT_APP_SERVER_HOST}/api/email`,
+    `${process.env.REACT_APP_SERVER_HOST}/api/news-letter-subscribers`
   );
   return (
     <Box className="subscribeWrapper">

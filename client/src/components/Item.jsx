@@ -36,7 +36,7 @@ const Item = ({ item, width }) => {
         <img
           alt={item.name}
           className="image"
-          src={`https://localhost:1337${url}`}
+          src={`${process.env.REACT_APP_SERVER_HOST}${url}`}
           onClick={() => navigate(`/item/${item.id}`)}
         />
         <Box className="buttonsOuterBox" display={isHovered ? "block" : "none"}>
